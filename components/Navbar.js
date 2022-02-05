@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../../styles/NavBar.module.css'
+import styles from '../styles/NavBar.module.css'
 
 export default function Navbar() {
 	return (
