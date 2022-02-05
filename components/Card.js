@@ -9,7 +9,7 @@ export default function Card({ pokemon }) {
 			<Image src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`} width={120} height={120} alt={pokemon.name + ' image'}></Image>
 			<p className={styles.id}>#{pokemon.id}</p>
 			<h3 className={styles.title}>{pokemon.name}</h3>
-			<Link href={`pokemon/${pokemon.id}`}>
+			<Link href={`/pokemon/${pokemon.id}`}>
 				<a className={styles.btn}>Details</a>
 			</Link>
 		</div>
