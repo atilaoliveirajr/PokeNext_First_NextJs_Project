@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../../styles/Pokemon.module.css'
-
+import styles from '../../styles/Pokemon.module.css';
 
 export async function getStaticPaths() {
 	const maxPokemons = 251;
@@ -34,6 +33,8 @@ export async function getStaticProps(context) {
 }
 
 export default function Pokemon({ pokemon }) {
+	if (!pokemon) return  <></>;
+
 	return (
 		<div className={styles.pokemon_container}>
 			<h1 className={styles.title}>{pokemon.name}</h1>
